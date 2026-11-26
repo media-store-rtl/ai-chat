@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <title>گفت‌وگوی هوشمند</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">✦</span><div><strong>گفت‌وگوی هوشمند</strong><small>فضای شخصی شما</small></div></div>
+      <button class="new-chat" id="new-chat">＋ گفت‌وگوی جدید</button>
+      <div class="side-caption">گفت‌وگوها</div>
+      <div class="empty-history" id="history-empty">هنوز گفت‌وگویی ندارید</div>
+      <div class="sidebar-bottom"><span class="status-dot"></span> مدل محلی Ollama</div>
+    </aside>
+    <main class="main-panel">
+      <header class="topbar"><div><span class="eyebrow">AI WORKSPACE</span><h1>دستیار هوشمند</h1></div><span class="model-chip">Qwen · Local</span></header>
+      <section class="conversation" id="conversation" aria-live="polite">
+        <div class="welcome" id="welcome">
+          <div class="welcome-icon">✦</div>
+          <h2>امروز چه کاری از دستم برمی‌آید؟</h2>
+          <p>سؤالت را بنویس تا گفت‌وگو را شروع کنیم.</p>
+          <div class="suggestions">
+            <button class="suggestion">یک متن رسمی برایم بنویس</button>
+            <button class="suggestion">در یک موضوع تحقیق کن</button>
+            <button class="suggestion">یک مسئله را مرحله‌به‌مرحله توضیح بده</button>
+          </div>
+        </div>
+      </section>
+      <form class="composer" id="chat-form">
+        <textarea id="message" rows="1" placeholder="پیامت را اینجا بنویس…" aria-label="متن پیام" required></textarea>
+        <div class="composer-footer"><span>پاسخ‌ها با مدل محلی سرور تولید می‌شوند</span><button class="send-button" id="send" type="submit" aria-label="ارسال پیام">↑</button></div>
+      </form>
+      <p class="fine-print">این نسخه اولیه رابط کاربری است؛ اتصال امن به سرویس در مرحله بعد فعال می‌شود.</p>
+    </main>
+  </div>
+  <script src="/assets/js/app.js" defer></script>
+</body>
+</html>
