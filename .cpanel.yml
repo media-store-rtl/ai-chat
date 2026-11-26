@@ -1,5 +1,5 @@
 ---
- deployment:
+deployment:
   tasks:
     - /bin/mkdir -p /home/mediast1/ai-chat/public/assets/css
     - /bin/mkdir -p /home/mediast1/ai-chat/public/assets/js
