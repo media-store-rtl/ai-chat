@@ -1,0 +1,9 @@
+/vendor/
+/node_modules/
+.env
+.env.*
+/config.php
+/storage/*
+!/storage/.gitkeep
+.DS_Store
+Thumbs.db
